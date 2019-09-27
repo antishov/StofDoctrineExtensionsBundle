@@ -15,9 +15,6 @@
             "email": "stof@notk.org"
         }
     ],
-    "conflict": {
-        "stof/doctrine-extensions-bundle": "*"
-    },
     "require": {
         "php": ">=7.1",
         "symfony/framework-bundle": "^4.3",
@@ -26,6 +23,12 @@
     "require-dev": {
         "symfony/phpunit-bridge": "^4.3",
         "symfony/security-bundle": "^4.3"
+    },
+    "replace": {
+        "stof/doctrine-extensions-bundle": "self.version"
+    },
+    "conflict": {
+        "stof/doctrine-extensions-bundle": "*"
     },
     "suggest": {
         "doctrine/doctrine-bundle": "to use the ORM extensions",
